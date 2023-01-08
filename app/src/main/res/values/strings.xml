@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NYCSchools</string>
+    <string name="nyc_schools">NYC Schools</string>
+    <string name="generate_nyc_schools">Generate NYC Schools</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.nycschools.viewmodels.NYCSchoolViewModel" />
+        <variable
+            name="schoolListFragment"
+            type="com.example.nycschools.view.SchoolListFragment" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SchoolListFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/schoolList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:schoolListData="@{viewModel.nycSchools}"
+            android:clipToPadding="false"
+            android:padding="16dp"
+            tools:itemCount="12"
+            tools:listitem="@layout/school_item"/>
+
+    </FrameLayout>
+</layout>
