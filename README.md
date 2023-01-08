@@ -12,7 +12,7 @@
 
 ### App Walkthough GIF
 
-<img src="https://imgur.com/a/eulTyl6.gif" width=250><br>
+<img src="https://i.imgur.com/eulTyl6.gif" width=250><br>
 
 
 ### Notes/Problems
