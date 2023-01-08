@@ -18,6 +18,10 @@ class SchoolListFragment: Fragment() {
     private val viewModel: NYCSchoolViewModel by activityViewModels()
     private var binding: FragmentSchoolListBinding? = null
 
+    /**
+     * Creates the View, and inflates it on to the MainActivity
+     */
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,6 +32,9 @@ class SchoolListFragment: Fragment() {
         return fragmentBinding.root
     }
 
+    /**
+     * Called after the onCreateView to make sure the Fragments root is non-null
+     */
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -36,6 +43,11 @@ class SchoolListFragment: Fragment() {
         binding?.lifecycleOwner = this
         binding?.schoolList?.adapter = SchoolListAdapter()
     }
+
+    /**
+     * This fragment lifecycle method is called when the view hierarchy associated with the fragment
+     * is being removed. As a result, clear out the binding object.
+     */
 
     override fun onDestroyView() {
         super.onDestroyView()
