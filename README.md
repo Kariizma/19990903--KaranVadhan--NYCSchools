@@ -17,6 +17,8 @@
 
 ### Notes/Problems
 
+- (BUG) The First 12 items in the RecyclerView are not showing up when you first generate the list, im assuming it has something to do with the Binding and im trying to figure out how to fix it. the items are still usable and are showing the right information just the Text isnt showing.
+
 
 ## Open-source libraries used
 - [Retrofit 2](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java/Kotlin
