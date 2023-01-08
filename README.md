@@ -18,7 +18,7 @@
 ### Notes/Problems
 
 - (BUG) The First 12 items in the RecyclerView are not showing up when you first generate the list, im assuming it has something to do with the Binding and im trying to figure out how to fix it. the items are still usable and are showing the right information just the Text isnt showing.
-      - Fixed it, i made a mistake by binding it in Kotlin aswell is binding it in the XML 
+  - Fixed it, i made a mistake by binding it in Kotlin aswell is binding it in the XML 
 
 
 ## Open-source libraries used
