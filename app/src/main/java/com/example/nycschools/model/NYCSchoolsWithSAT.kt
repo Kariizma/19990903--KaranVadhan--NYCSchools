@@ -14,7 +14,7 @@ import com.squareup.moshi.Json
  * The property names of this data class are used by Moshi to match the names of values in JSON.
  */
 
-data class NYCSchoolsWithSAT (
+data class NYCSchoolsWithSAT(
     @Json(name = "dbn") val id: String,
     @Json(name = "school_name")val schoolName: String,
     @Json(name = "num_of_sat_test_takers")val numOfSATTakers: String,
