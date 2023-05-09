@@ -41,7 +41,7 @@ class SchoolListFragment: Fragment() {
         binding?.viewModel = viewModel
         binding?.schoolListFragment = this
         binding?.lifecycleOwner = this
-        binding?.schoolList?.adapter = SchoolListAdapter()
+        binding?.schoolList?.adapter = SchoolListAdapter(viewModel)
     }
 
     /**

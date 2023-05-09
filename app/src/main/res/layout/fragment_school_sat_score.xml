@@ -10,9 +10,8 @@
         <variable
             name="viewModel"
             type="com.example.nycschools.viewmodels.NYCSchoolViewModel" />
-
         <variable
-            name="SchoolInfoFragment"
+            name="schoolInfoFragment"
             type="com.example.nycschools.view.SchoolInfoFragment" />
     </data>
 
@@ -33,7 +32,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAppearance="?attr/textAppearanceHeadline4"
                 android:textColor="@color/material_on_background_emphasis_medium"
-                android:text="@{SchoolInfoFragment.dbName}"/>
+                android:text="@{viewModel.dbName}"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -42,7 +41,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAppearance="?attr/textAppearanceHeadline4"
                 android:textColor="@color/material_on_background_emphasis_medium"
-                android:text="@{SchoolInfoFragment.numOfSATTakers}"/>
+                android:text="@{viewModel.numOfSATTakers}"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,7 +50,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAppearance="?attr/textAppearanceHeadline4"
                 android:textColor="@color/material_on_background_emphasis_medium"
-                android:text="@{SchoolInfoFragment.readingScore}"/>
+                android:text="@{viewModel.readingScore}"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +59,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAppearance="?attr/textAppearanceHeadline4"
                 android:textColor="@color/material_on_background_emphasis_medium"
-                android:text="@{SchoolInfoFragment.mathScore}"/>
+                android:text="@{viewModel.mathScore}"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,7 +68,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAppearance="?attr/textAppearanceHeadline4"
                 android:textColor="@color/material_on_background_emphasis_medium"
-                android:text="@{SchoolInfoFragment.writingScore}"/>
+                android:text="@{viewModel.writingScore}"/>
 
         </LinearLayout>
 

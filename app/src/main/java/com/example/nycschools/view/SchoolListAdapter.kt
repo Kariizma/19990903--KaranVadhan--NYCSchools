@@ -12,12 +12,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.nycschools.R
 import com.example.nycschools.databinding.SchoolItemBinding
 import com.example.nycschools.model.NYCSchools
+import com.example.nycschools.viewmodels.NYCSchoolViewModel
 
 /**
  * this class implements a [RecyclerView] [ListAdapter] which uses DataBinding to present [List] of [NYCSchools] data
  */
 
-class SchoolListAdapter : ListAdapter<NYCSchools, SchoolListAdapter.SchoolListViewHolder>(DiffCallBack) {
+class SchoolListAdapter(
+    private val viewModel: NYCSchoolViewModel
+) : ListAdapter<NYCSchools, SchoolListAdapter.SchoolListViewHolder>(DiffCallBack) {
 
     /**
      * Creates new [RecyclerView] item views
